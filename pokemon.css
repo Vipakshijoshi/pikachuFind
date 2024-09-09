@@ -1,0 +1,106 @@
+/* Container for the card list */
+.heading{
+    
+    display: flex !important;
+    justify-content: center;
+}
+/* Container for the card list */
+.pokemon-list {
+    display: flex;
+    flex-wrap: wrap; /* Allows the cards to wrap into multiple rows */
+    gap: 20px; 
+    justify-content: center; /* Centers the cards in the row */
+    padding: 0 30px;
+    list-style-type: none;
+  }
+  
+  /* Individual card styling */
+  .card {
+    background-color: #f4f4f9;
+    border: 2px solid #ececec;
+    border-radius: 12px;
+    width: 320px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin: 10px;
+    /* flex: 1 1 calc(33.333% - 40px); Flex basis calculation to fit three cards per row */
+  }
+  
+  /* Card hover effect */
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Styling the Pokémon card section */
+  .Pokemon-card {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Styling the Pokémon image */
+  .pokemon-image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  /* Pokémon name styling */
+  .name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* Flex container to display items in one line */
+  /* Flex container for info sections */
+/* Flex container to keep all info in one line */
+.Pokemon-grid {
+    display: flex;
+    gap: 10px; /* Space between each item */
+    align-items: center; /* Center items vertically */
+    overflow-x: auto; /* Allows horizontal scrolling if content overflows */
+    white-space: nowrap; /* Keeps all items in a single line */
+    margin-top: 10px;
+    scrollbar-width: none; /* Hides the scrollbar in Firefox */
+  }
+  
+  /* Hide scrollbar in WebKit browsers (Chrome, Safari) */
+  .Pokemon-grid::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Individual info item styling */
+  .Pokemon-info {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0;
+  }
+  
+  
+  
+
+.pokemon-info-highlight{
+    background-color: #7de97d;
+    padding: 5px;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 8px auto;
+  }
+
+  .Pokemon-info span{
+    font-weight: 800;
+  }
+
+  .searchItem{
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+  }
+
+  .searchtext{
+    padding: 0.3rem;
+
+  }
+  
